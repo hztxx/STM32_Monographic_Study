@@ -1,0 +1,81 @@
+# ===================== 通用系统文件 =====================
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*.swp
+*~
+__pycache__/
+*.pyc
+
+# ===================== STM32CubeMX 相关 =====================
+# CubeMX 自动生成的临时缓存
+.cubemx/
+.ioc.backup
+*.ioc~
+# CubeMX 自动生成的中间文件
+MX_*.txt
+# 自动生成的编译中间目录（部分版本）
+Generated/
+
+# ===================== Keil MDK-ARM 工程垃圾文件 =====================
+# 编译输出目录（目标文件、可执行文件、调试文件）
+Objects/
+Listings/
+# Keil 界面布局、窗口缓存
+*.uvguix.*
+# 工程备份、自动保存文件
+*.uvoptx.bak
+*.uvprojx.bak
+# 调试仿真日志、断点缓存
+*.dbg
+*.ini
+*.sct.bak
+# 编译临时文件
+*.crf
+*.o
+*.d
+*.axf
+*.elf
+*.hex
+*.bin
+*.map
+*.lst
+*.htm
+# 在线调试下载缓存
+JLinkLog.txt
+JLinkSettings.ini
+STLinkLog.txt
+
+# ===================== GCC/STM32CubeIDE 兼容（可选保留） =====================
+Debug/
+Release/
+build/
+cmake-build-*/
+*.elf
+*.hex
+*.bin
+*.out
+*.su
+*.swo
+.cproject
+.project
+.settings/
+
+# ===================== 硬件工具、烧录工具文件 =====================
+*.jlink
+*.flash
+*.program
+# STM32Programmer 日志缓存
+STM32CubeProgrammer.log
+
+# ===================== 文档、临时草稿（按需） =====================
+*.docx
+*.pdf
+*.zip
+*.rar
+# 个人笔记、测试脚本
+test_*.txt
+temp/
+tmp/
