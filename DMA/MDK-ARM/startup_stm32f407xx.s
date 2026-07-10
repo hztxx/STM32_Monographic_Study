@@ -29,13 +29,17 @@
 ;   <o> Stack Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>
 
-Stack_Size		EQU     0x400
+Stack_Size		EQU     0x800
 
                 AREA    STACK, NOINIT, READWRITE, ALIGN=3
+; 栈最低地址（栈底）
+__stack_bottom
+                EXPORT  __stack_bottom
+; 分配4KB栈内存
 Stack_Mem       SPACE   Stack_Size
+; 栈最高地址（初始SP栈顶）
 __initial_sp
-
-
+                EXPORT  __initial_sp
 ; <h> Heap Configuration
 ;   <o>  Heap Size (in Bytes) <0x0-0xFFFFFFFF:8>
 ; </h>

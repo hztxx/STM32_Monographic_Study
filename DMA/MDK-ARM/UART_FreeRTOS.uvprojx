@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>USE_HAL_DRIVER,STM32F407xx</Define>
               <Undefine></Undefine>
-              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Devices;../BSP/LCD;../TEST</IncludePath>
+              <IncludePath>../Core/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc;../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy;../Drivers/CMSIS/Device/ST/STM32F4xx/Include;../Drivers/CMSIS/Include;../Middlewares/Third_Party/FreeRTOS/Source/include;../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2;../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F;../Devices;../BSP/LCD;../TEST;..\DWT_perf_analysis</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -2058,6 +2058,31 @@
               <FileName>DMA_study.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\TEST\DMA_study.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>DWT_perf_analysis</GroupName>
+          <Files>
+            <File>
+              <FileName>perf_counter.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DWT_perf_analysis\perf_counter.c</FilePath>
+            </File>
+            <File>
+              <FileName>perf_test1.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DWT_perf_analysis\perf_test1.c</FilePath>
+            </File>
+            <File>
+              <FileName>perf_test2.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DWT_perf_analysis\perf_test2.c</FilePath>
+            </File>
+            <File>
+              <FileName>perf_test3.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\DWT_perf_analysis\perf_test3.c</FilePath>
             </File>
           </Files>
         </Group>

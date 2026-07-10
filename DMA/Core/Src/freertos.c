@@ -28,6 +28,9 @@
 #include "uart_device.h"
 #include "lcd.h"
 #include "DMA_study.h" 
+#include "perf_test1.h" 
+#include "perf_test2.h" 
+#include "perf_test3.h" 
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -75,10 +78,12 @@ void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
   */
 void MX_FREERTOS_Init(void) {
   /* USER CODE BEGIN Init */
-	
+	test1();
+	//test2();
+	//test3();
 	//test_init();
 	//test_Double_Buffer_init();
-	test_Double_Buffer_soft_init();
+	//test_Double_Buffer_soft_init();
   /* USER CODE END Init */
 
   /* USER CODE BEGIN RTOS_MUTEX */
@@ -106,7 +111,7 @@ void MX_FREERTOS_Init(void) {
   //test_creat_Ret = xTaskCreate(test_normal,"test_normal",256,NULL,osPriorityNormal,&test_Handle);
   //test_creat_Ret = xTaskCreate(test_Circular,"test_Circular",256,NULL,osPriorityNormal,&test_Handle);
   //test_creat_Ret = xTaskCreate(test_Double_Buffer,"test_Double_Buffer",256,NULL,osPriorityNormal,&test_Handle);
-  test_creat_Ret = xTaskCreate(test_Double_Buffer_soft,"test_Double_Buffer_soft",256,NULL,osPriorityNormal,&test_Handle);
+  //test_creat_Ret = xTaskCreate(test_Double_Buffer_soft,"test_Double_Buffer_soft",256,NULL,osPriorityNormal,&test_Handle);
   
   /* add threads, ... */
   /* USER CODE END RTOS_THREADS */

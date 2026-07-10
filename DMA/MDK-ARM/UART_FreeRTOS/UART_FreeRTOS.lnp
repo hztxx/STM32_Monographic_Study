@@ -48,6 +48,10 @@
 "uart_freertos\uart_device.o"
 "uart_freertos\lcd.o"
 "uart_freertos\dma_study.o"
+"uart_freertos\perf_counter.o"
+"uart_freertos\perf_test1.o"
+"uart_freertos\perf_test2.o"
+"uart_freertos\perf_test3.o"
 --library_type=microlib --strict --scatter "UART_FreeRTOS\UART_FreeRTOS.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

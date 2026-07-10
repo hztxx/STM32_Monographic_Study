@@ -1,0 +1,28 @@
+{
+  "performance_report": {
+    "cpu_freq_mhz": 168,
+    "counter_count": 4,
+    "counters": [
+      {
+        "name": "outer_function",
+        "call_count": 5,
+        "total_cycles": 24097,
+        "avg_cycles": 4819,
+        "min_cycles": 4619,
+        "max_cycles": 5615,
+        "avg_time_us": 28.68,
+        "history": [5615, 4623, 4619, 4619, 4621, 0, 0, 0, 0, 0]
+      },
+      {
+        "name": "inner_function",
+        "call_count": 5,
+        "total_cycles": 10232,
+        "avg_cycles": 2046,
+        "min_cycles": 2042,
+        "max_cycles": 2064,
+        "avg_time_us": 12.18,
+        "history": [2064, 2042, 2042, 2042, 2042, 0, 0, 0, 0, 0]
+      }
+    ]
+  }
+}
